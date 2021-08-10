@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -8,7 +9,12 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <Image
+        src="/images/profile.jpg"
+        width={144}
+        height={144}
+        alt="Profile"
+      ></Image>
       <main>
         <h1 className="title">
           Read{' '}
