@@ -31,7 +31,7 @@ export default function Home({allPostsData}) {
 
 import {getSortedPostsData} from '../lib/posts'
 
-export async function getStaticProps() {
+export async function getServerSideProps(context) {
   const allPostsData = getSortedPostsData()
   return {
     props: {
@@ -39,3 +39,11 @@ export async function getStaticProps() {
     }
   }
 }
+// export async function getStaticProps() {
+//   const allPostsData = getSortedPostsData()
+//   return {
+//     props: {
+//       allPostsData
+//     }
+//   }
+// }
