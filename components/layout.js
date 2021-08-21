@@ -9,6 +9,14 @@ export const siteTitle = 'Next.js Website'
 
 export default function Layout({ children, home }) {
   return (
+    <>
+    <nav className={styles.nav}>
+      <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Reach me</a></li>
+    </ul>
+    </nav>
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
@@ -69,5 +77,9 @@ export default function Layout({ children, home }) {
         </div>
       )}
     </div>
+    <footer className={styles.footer}>
+        <div>Reach me</div>
+    </footer>
+    </>
   )
 }

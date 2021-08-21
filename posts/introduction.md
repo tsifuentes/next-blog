@@ -15,7 +15,7 @@ Find other ways to ask ["Could you repeat please?"](https://github.com/tsifuente
 <br>
 <br>
 ## How to begin
-[How to begin?](https://github.com/tsifuentes/english/blob/main/how-to-begin.md) The idea is guiding you through ideas what you would need to practice or be focus on first, then as second thing, and so on.
+[How to begin?](/posts/how-to-begin) The idea is guiding you through ideas what you would need to practice or be focus on first, then as second thing, and so on.
 <br>
 <br>
 ## Daily habits
