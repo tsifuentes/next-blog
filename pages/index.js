@@ -4,7 +4,7 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Date from '../components/date'
 
-export default function Home({allPostsData}) {
+export default function Home({allPostsData, allDirectories}) {
   return (
     <Layout home>
       <Head>
@@ -29,17 +29,26 @@ export default function Home({allPostsData}) {
           ))}
         </ul>
       </section>
+
+      <div className={utilStyles.flex}>
+      {allDirectories.map(item => (
+        <Card title={item}></Card>
+      ))}
+      </div>
     </Layout>
   )
 }
 
-import {getSortedPostsData} from '../lib/posts'
+import {getAllDirectories, getSortedPostsData} from '../lib/posts'
+import Card from '../components/card'
 
 export async function getServerSideProps(context) {
   const allPostsData = getSortedPostsData()
+  const allDirectories = getAllDirectories();
   return {
     props: {
-      allPostsData
+      allPostsData,
+      allDirectories
     }
   }
 }
