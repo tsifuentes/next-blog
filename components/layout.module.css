@@ -31,12 +31,16 @@
 
 .nav ul li {
     display: inline-flex;
-    padding: 20px;
+    padding: 20px 40px 20px 0;
 }
 .nav ul li a {
     color: #FFF !important;
 }
 
+.footer {
+    padding: 40px 0;
+    background-color: #222;
+}
 .footer div {
     color: #FFF;
 }

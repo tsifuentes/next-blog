@@ -9,7 +9,7 @@ export default function Home({allDirectories}) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>I am a Systems Engineer who loves Web Technologies, Algotithms, Software Architecture, Design Patterns, Apps, Cloud and more!</p>
+        <p>I am a Systems Engineer who loves Web Technologies, Algorithms, Software Architecture, Design Patterns, Apps, Cloud and more!</p>
       </section>
         <h2 className={utilStyles.headingLg}>Topics</h2>
       <div className={utilStyles.flex}>

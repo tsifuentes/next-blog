@@ -78,7 +78,14 @@ export default function Layout({ children, home }) {
       )}
     </div>
     <footer className={styles.footer}>
-        <div>Reach me</div>
+        <div>
+          <ul>
+            <li>Linkedin</li>
+            <li>Linkedin</li>
+            <li>Linkedin</li>
+            <li>Linkedin</li>
+          </ul>
+        </div>
     </footer>
     </>
   )
